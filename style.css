@@ -1,0 +1,27 @@
+:root{--navy:#102a43;--blue:#1769aa;--cyan:#19a7ce;--bg:#f4f8fc;--ink:#243b53;--muted:#627d98;--white:#fff;--line:#d9e4ef;--shadow:0 12px 30px rgba(16,42,67,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:linear-gradient(120deg,#102a43,#1769aa);color:white}
+.top{max-width:1120px;margin:auto;padding:26px 22px 18px}
+.brand{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#b9e6f2;font-weight:700}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:12px 0}
+header p{max-width:720px;color:#e5f3fb;margin:0}
+nav{background:#0b2035}
+.nav-inner{max-width:1120px;margin:auto;display:flex;gap:8px;padding:0 22px}
+nav a{color:#dcecf7;text-decoration:none;padding:15px 18px;font-weight:700;border-bottom:3px solid transparent}
+nav a:hover,nav a.active{color:white;background:rgba(255,255,255,.09);border-bottom-color:#39c6e6}
+main{max-width:1120px;margin:32px auto;padding:0 22px 50px}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;background:white;padding:26px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.intro h2{font-size:28px;color:var(--navy);margin:0 0 8px}
+.intro img{width:100%;max-height:245px;object-fit:contain}
+.section-title{margin:42px 0 16px;color:var(--navy);font-size:26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.card img{width:100%;height:145px;object-fit:contain;margin-bottom:10px}
+.card h3{margin:0 0 7px;color:var(--blue);font-size:20px}
+.card p{margin:0;color:#486581}
+.note{margin-top:24px;padding:18px 20px;border-left:5px solid var(--cyan);background:#eaf7fb;border-radius:8px}
+footer{text-align:center;padding:24px;color:#627d98;background:#eaf0f6;font-size:14px}
+@media(max-width:760px){.intro{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav-inner{padding:0 10px}nav a{padding:13px 12px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.top{padding-top:22px}}
